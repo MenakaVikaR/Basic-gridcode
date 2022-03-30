@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3 col split</title>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.columns {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.content-bg {
+  display: block;
+  width: 100%;
+  height: 100%;	
+  background-color: #001b42;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F3F3F3;
+  border: 2px solid #001b42;
+}
+
+.content-bg:hover .overlay {
+  opacity: 1;
+}
+
+.textone {
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.buttonone {
+  background-color: transparent; /* Green */
+  border: 2px solid #001b42;
+  border-color: #fff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 45%;
+  height: 11%;
+  margin-left: 31px;
+  margin-top: 19px;
+}
+
+.buttonone1 {border-radius: 20px;}
+
+.buttontwo {
+  background-color: transparent; /* Green */
+  border: 2px solid #001b42;
+  border-color: #001b42;
+  color: #001b42;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 45%;
+  height: 11%;
+  margin-left: 31px;
+  margin-top: 13px;
+}
+
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="columns" style="">
+    
+
+    <div class="column">
+		<div class="content-bg">
+  <h1 style="color: #fff; padding: 15px 0px 0px 15px; font-size: 35px;">Strategy</h1>
+  <img src="http://127.0.0.1/theseoarchdemo/wp-content/uploads/2021/09/digital-strategy-ico.png" style="width: 40%; padding: 45px 0px 0px 15px;"><br>
+  <button class="buttonone button1">Learn more</button>
+  <div class="overlay">
+  <h1 style="color: #000; padding: 0px 0px 0px 15px; font-size: 25px;">Strategy</h1>
+  <ul style="line-height: 1.7;"><li>Campaign roadmaps</li>
+<li>Campaign audits</li>
+<li>Consultation & management</li>
+<li>Industry & market analysis</li>
+<li>Customised data & analytics</li>
+<li>Conversion rate optimisation</li>
+</ul>
+
+<button class="buttontwo button2">Learn more</button>
+  </div>
+  </div>
+
+  </div>
+  <div class="columns" style="">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="columns" style="">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="columns" style="">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+	
+</body>
+</html>

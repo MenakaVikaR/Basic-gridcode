@@ -1,0 +1,154 @@
+<html>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<style type="text/css">@import url(https://fonts.googleapis.com/css?family=Cabin);
+body {
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background-size: cover;
+  font-family: 'Cabin', sans-serif;
+  background-color: #001b42;
+}
+
+.containerform {
+  height: auto;
+  width: 50%;
+  font-family: 'Cabin', sans-serif;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: block;
+  background: transparent;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+form {
+  font-family: 'Cabin', sans-serif;
+  padding: 0;
+  width: 90%;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.feedback-input {
+  color: #ffffff;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 0;
+  margin-right: 0;
+  line-height: 22px;
+  background-color: none;
+  padding: 13px 13px 13px 13px;
+  margin-bottom: 10px;
+  width: 69%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-bottom: 2px solid #ffffff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.feedback-input:focus {
+  box-shadow: 0;
+  color: #3498db;
+  transition: .4s ease;
+  outline: none;
+  border-bottom: 2px solid black;
+  padding: 13px 13px 13px 13px;
+}
+
+.focused {
+  color: #30aed6;
+  border: #30aed6 solid 3px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#button-blue {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  width: 50%;
+  /*border: 2px solid #001b42 !important;*/
+  border: 2px solid;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-top: -4px;
+  font-weight: 700;
+  transition: .3s ease;
+  border-top-left-radius: 10px;
+  /* Note there is no / symbol here! */
+  border-bottom-right-radius: 80px 40px;
+}
+
+#button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  background: #fff;
+}
+
+.submit:hover {
+  color: #22A7F0;
+}</style>
+<header>
+</header>
+  <div class="containerform">
+      <h1 style=" text-align: left;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  font-size: 25px;
+  padding: 30px;">Simple Contact Form</h1>
+
+<form>
+
+  <p class="name">
+    <input name="name" type="text" class="feedback-input" placeholder="FULL NAME" id="name" />
+  </p>
+
+  <p class="email">
+    <input name="email" type="text" class="feedback-input" id="email" placeholder="EMAIL" />
+  </p>
+
+  <p class="name">
+    <input name="email" type="text" class="feedback-input" id="phone" placeholder="PHONE" />
+  </p>
+
+  <p class="name">
+    <input name="email" type="text" class="feedback-input" id="company" placeholder="COMPANY" />
+  </p>
+
+  <p class="text">
+    <textarea name="text" class="feedback-input" id="comment" placeholder="TELL US MORE ABOUT PROJECT"></textarea>
+  </p>
+<div class="g-recaptcha" data-sitekey="your_site_key"></div>
+<br>
+  <div class="submit">
+    <input type="submit" value="SEND!" id="button-blue" />
+  </div>
+  <!-- <h3>Created by Sam Headland | Website: <a href="https://www.samheadland.co.uk">samheadland.co.uk</h3> -->
+</form>
+  </div>
+
+<script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
+</html>

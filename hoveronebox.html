@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: #001b42;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F3F3F3;
+  border: 2px solid #001b42;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.button {
+  background-color: transparent; /* Green */
+  border: 5px;
+  border-color: #fff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 20px;}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="image">
+  <h1 style="color: #fff; padding: 15px 0px 0px 15px;">Strategy</h1>
+  <img src="images/digital-strategy-ico.svg" style="width: 50px; padding: 15px 0px 0px 15px;">
+  <button class="button button1">Learn more</button>
+  <div class="overlay">
+  <h1 style="color: #000; padding: 15px 0px 0px 15px;">Strategy</h1>
+  <ul><li>Campaign roadmaps</li>
+<li>Campaign audits</li>
+<li>Consultation & management</li>
+<li>Industry & market analysis</li>
+<li>Customised data & analytics</li>
+<li>Conversion rate optimisation</li>
+
+</ul>
+    <!-- <div class="text">Hello World</div> -->
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
